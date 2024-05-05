@@ -6,13 +6,13 @@ This project encompasses both UI and API tests to ensure the robustness and reli
 **Build tool/Dependency management** : Maven 3.6 <br>
 
 ## Introduction
-This project includes UI tests to validate Customer login scenarios, Basic search functionality, Process of Listing Item. 
+This project includes UI tests to validate Customer login scenarios, Basic search functionality, Process of Listing Item.
 In addition to that this project includes API tests to verify the API functionality of Retrieve Latest Listing,
 and listing an item.
 
 ## Authentication
-For API automation tests consumer key, access token, and OAuth signature are used to authenticate APIs. 
-Follow the instructions provided in TradeMe Developer Portal(https://developer.trademe.co.nz/api-overview/authentication) to obtain these parameters. 
+For API automation tests consumer key, access token, and OAuth signature are used to authenticate APIs.
+Follow the instructions provided in TradeMe Developer Portal(https://developer.trademe.co.nz/api-overview/authentication) to obtain these parameters.
 These parameters are stored as environment variables.
 
 ## Postman Collection
@@ -31,6 +31,6 @@ API Tests
 
 
 ##Note:
-Trademe login function has **reCaptcha** feature which is not intended to automate. 
+Trademe login function has **reCaptcha** feature which is not intended to automate.
 It is recommended to disable this feature before running automation.
 
