@@ -1,5 +1,5 @@
 # Trademe Automation
-This project encompasses both UI and API tests to ensure the robustness and reliability of the application. U
+This project encompasses both UI and API tests to ensure the 'robustness' and reliability of the application.
 Tools used : Java(JDK) 11, Selenium 4.2, Rest Assured 5.4
 Test framework : TestNG 7.10
 Build tool/Dependency management : Maven 3.6
