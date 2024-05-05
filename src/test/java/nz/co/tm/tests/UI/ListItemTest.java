@@ -2,7 +2,7 @@ package nz.co.tm.tests.UI;
 
 import nz.co.tm.UI.pages.*;
 import nz.co.tm.UI.utils.ExcelReadUtil;
-import nz.co.tm.utils.TestData.ItemData;
+import nz.co.tm.utils.UI.TestData.ItemData;
 import nz.co.tm.utils.UI.BaseTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;

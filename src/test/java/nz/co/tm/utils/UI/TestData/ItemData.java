@@ -1,4 +1,4 @@
-package nz.co.tm.utils.TestData;
+package nz.co.tm.utils.UI.TestData;
 
 public class ItemData {
 

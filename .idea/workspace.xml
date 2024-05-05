@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9730bf0-5dc9-4e83-a3f1-1548114ba5d5" name="Changes" comment="" />
+    <list default="true" id="d9730bf0-5dc9-4e83-a3f1-1548114ba5d5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/nz/co/tm/tests/UI/ListItemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nz/co/tm/tests/UI/ListItemTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/nz/co/tm/utils/TestData/ItemData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nz/co/tm/utils/UI/TestData/ItemData.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,8 +21,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/test/resources/testData/generalAuction.xml" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
@@ -28,19 +38,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/MadivT/Downloads/apit/apit&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/Automation/testsena/trademe",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "configurable.group.appearance"
   }
-}</component>
-  <component name="RunManager" selected="TestNG.ListItemTest (1)">
-    <configuration name="ListItemTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Automation\testsena\trademe" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Automation\testsena\trademe" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.ListItemTest">
+    <configuration name="ListItemAPITest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="trademe" />
       <extension name="coverage">
         <pattern>
@@ -49,7 +67,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="nz.co.tm.tests.API" />
-      <option name="MAIN_CLASS_NAME" value="nz.co.tm.tests.API.ListItemTest" />
+      <option name="MAIN_CLASS_NAME" value="nz.co.tm.tests.API.ListItemAPITest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -74,7 +92,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RetrieveLatestListingTest.testRetrieveLatestListingByBuyNowOption" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="RetrieveLatestListingAPITest.testRetrieveLatestListingByBuyNowOption" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="trademe" />
       <extension name="coverage">
         <pattern>
@@ -83,7 +101,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="nz.co.tm.tests.API" />
-      <option name="MAIN_CLASS_NAME" value="nz.co.tm.tests.API.RetrieveLatestListingTest" />
+      <option name="MAIN_CLASS_NAME" value="nz.co.tm.tests.API.RetrieveLatestListingAPITest" />
       <option name="METHOD_NAME" value="testRetrieveLatestListingByBuyNowOption" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -129,9 +147,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.ListItemTest (1)" />
         <item itemvalue="TestNG.ListItemTest" />
-        <item itemvalue="TestNG.RetrieveLatestListingTest.testRetrieveLatestListingByBuyNowOption" />
+        <item itemvalue="TestNG.ListItemAPITest" />
+        <item itemvalue="TestNG.RetrieveLatestListingAPITest.testRetrieveLatestListingByBuyNowOption" />
         <item itemvalue="TestNG.SearchTest.verifySearchFunctionality" />
         <item itemvalue="TestNG.SearchTest" />
       </list>
@@ -167,18 +185,18 @@
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/nz/co/tm/tests/API/ListItemTest.java</url>
-          <line>27</line>
+          <url>file://$PROJECT_DIR$/src/test/java/nz/co/tm/tests/API/ListItemAPITest.java</url>
+          <line>34</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/nz/co/tm/tests/API/ListItemTest.java</url>
-          <line>23</line>
+          <url>file://$PROJECT_DIR$/src/test/java/nz/co/tm/tests/API/ListItemAPITest.java</url>
+          <line>30</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/nz/co/tm/tests/API/RetrieveLatestListingTest.java</url>
-          <line>17</line>
+          <url>file://$PROJECT_DIR$/src/test/java/nz/co/tm/tests/API/RetrieveLatestListingAPITest.java</url>
+          <line>24</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
