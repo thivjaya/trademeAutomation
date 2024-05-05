@@ -6,8 +6,6 @@ import nz.co.tm.API.URIs;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
-
 import static io.restassured.RestAssured.given;
 
 /**
@@ -15,7 +13,7 @@ import static io.restassured.RestAssured.given;
  * Consumer key and access token is stored under env variables to
  * pass in the header of the API
  */
-public class RetrieveLatestListingTest extends BaseTest {
+public class RetrieveLatestListingAPITest extends BaseTest {
 
     @Test(description = "Retrieve latest listing filtered by Buy Now")
     public void testRetrieveLatestListingByBuyNowOption(){

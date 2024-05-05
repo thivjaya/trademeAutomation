@@ -1,5 +1,8 @@
 package nz.co.tm.API;
 
+/**
+ * Add all the end points here
+ */
 public class URIs {
 
     public static final String BASE_URI = "https://api.tmsandbox.co.nz";
