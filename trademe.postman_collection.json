@@ -1,0 +1,86 @@
+{
+	"info": {
+		"_postman_id": "a7a655bf-a2b4-4e7d-93a5-a495472c3d4e",
+		"name": "trademe",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "21912920"
+	},
+	"item": [
+		{
+			"name": "Listing item",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "oauth1",
+					"oauth1": {
+						"consumerKey": "{{consumer_key}}",
+						"tokenSecret": "{{token_secret}}",
+						"token": "{{access_token}}",
+						"consumerSecret": "{{consumer_secret}}",
+						"addParamsToHeader": true,
+						"signatureMethod": "PLAINTEXT",
+						"version": "1.0",
+						"addEmptyParamsToSign": false
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Category\": \"3440\",\r\n    \"Title\": \"Arty surprise\",\r\n    \"Description\": [\r\n        \"All true art lovers will buy this.\"\r\n    ],\r\n    \"StartPrice\": \"7\",\r\n    \"BuyNowPrice\": \"9\",\r\n    \"Duration\": 7,\r\n    \"Pickup\": 1,\r\n    \"IsBrandNew\": \"true\",\r\n    \"ShippingOptions\": [\r\n        {\r\n            \"Type\": 4,\r\n            \"Price\": 4.99,\r\n            \"Method\": \"nationwide non-rural\",\r\n            \"ShippingId\": 4\r\n        }\r\n    ],\r\n    \"PaymentMethods\": [\r\n        2,\r\n        4\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://api.tmsandbox.co.nz/v1/Selling.JSON"
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve latest listing",
+			"request": {
+				"auth": {
+					"type": "oauth1",
+					"oauth1": {
+						"tokenSecret": "{{token_secret}}",
+						"token": "{{access_token}}",
+						"consumerSecret": "{{consumer_secret}}",
+						"consumerKey": "{{consumer_key}}",
+						"addParamsToHeader": true,
+						"signatureMethod": "PLAINTEXT",
+						"version": "1.0",
+						"addEmptyParamsToSign": false
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.tmsandbox.co.nz/v1/Listings/Latest.JSON?region=1",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tmsandbox",
+						"co",
+						"nz"
+					],
+					"path": [
+						"v1",
+						"Listings",
+						"Latest.JSON"
+					],
+					"query": [
+						{
+							"key": "region",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
