@@ -1,0 +1,24 @@
+{
+        "Category":"3440",
+        "Title":"Arty surprise",
+        "Description":[
+                "All true art lovers will buy this."
+        ],
+        "StartPrice":"7",
+        "BuyNowPrice":"9",
+        "Duration":7,
+        "Pickup":1,
+        "IsBrandNew":"true",
+        "ShippingOptions":[
+                {
+                        "Type":4,
+                        "Price":4.99,
+                        "Method":"nationwide non-rural",
+                        "ShippingId":4
+                }
+        ],
+        "PaymentMethods":[
+                2,
+                4
+        ]
+}
