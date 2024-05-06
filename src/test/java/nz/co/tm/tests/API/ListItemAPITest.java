@@ -1,5 +1,6 @@
 package nz.co.tm.tests.API;
 
+import com.beust.ah.A;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
@@ -12,6 +13,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import static io.restassured.RestAssured.given;
 
@@ -49,7 +51,7 @@ public class ListItemAPITest extends BaseTest {
         Assert.assertEquals(jsonPath.get("ErrorDescription"), "Category "+ listItem.getCategory()+" does not exist.");
     }
 
-    @Test(description = "Verify invalid category returns error message")
+    @Test(description = "Verify sending empty title returns error message")
     public void testEmptyTitleReturnsError() throws IOException {
         ListingRequest listItem = listingRequest();
         listItem.setTitle("");
@@ -60,5 +62,43 @@ public class ListItemAPITest extends BaseTest {
         Assert.assertEquals(jsonPath.get("Success"), false);
         Assert.assertEquals(jsonPath.get("Description"), "Please enter a title");
     }
+    @Test(description = "Verify when buy now price is less than start price, returns error message")
+    public void testVerifyThatBuyNowPriceShouldBeGreaterThanStartPrice() throws IOException {
+        ListingRequest listItem = listingRequest();
+        listItem.setStartPrice("200");
+        listItem.setBuyNowPrice("100");
+        Response response = given().log().all().spec(specification).contentType(ContentType.JSON).body(listItem)
+                .when().post(URIs.END_POINT_LIST_ITEM);
+        Assert.assertEquals(response.statusCode(), 200);
+        JsonPath jsonPath = new JsonPath(response.getBody().asString());
+        Assert.assertEquals(jsonPath.get("Success"), false);
+        Assert.assertEquals(jsonPath.get("Description"), "The Buy Now price must be greater than or equal to the start price.");
+    }
+
+    @Test(description = "Verify pickup sets 0 returns error message")
+    public void testVerifyErrorMessageWhenNoPickupOptionIsSet() throws IOException {
+        ListingRequest listItem = listingRequest();
+        listItem.setPickup(0);
+        Response response = given().log().all().spec(specification).contentType(ContentType.JSON).body(listItem)
+                .when().post(URIs.END_POINT_LIST_ITEM);
+        Assert.assertEquals(response.statusCode(), 200);
+        JsonPath jsonPath = new JsonPath(response.getBody().asString());
+        Assert.assertEquals(jsonPath.get("Success"), false);
+        Assert.assertEquals(jsonPath.get("Description"), "Please select a pickup option.");
+        }
+
+    @Test(description = "Verify when no payment method selected returns error message")
+    public void testVerifyPaymentMethodIsSentReturnsError() throws IOException {
+        ListingRequest listItem = listingRequest();
+        ArrayList<Integer> payment = new ArrayList<>();
+        listItem.setPaymentMethods(payment);
+        Response response = given().log().all().spec(specification).contentType(ContentType.JSON).body(listItem)
+                .when().post(URIs.END_POINT_LIST_ITEM);
+        Assert.assertEquals(response.statusCode(), 200);
+        JsonPath jsonPath = new JsonPath(response.getBody().asString());
+        Assert.assertEquals(jsonPath.get("Success"), false);
+        Assert.assertEquals(jsonPath.get("Description"), "Please select the payment methods you will accept.");
+    }
+
 
 }
