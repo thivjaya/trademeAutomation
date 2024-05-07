@@ -81,6 +81,24 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Category Details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://api.trademe.co.nz/v1/Categories/3440/Details.json"
+			},
+			"response": []
+		},
+		{
+			"name": "Categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://api.trademe.co.nz/v1/Categories/1.json"
+			},
+			"response": []
 		}
 	]
 }
