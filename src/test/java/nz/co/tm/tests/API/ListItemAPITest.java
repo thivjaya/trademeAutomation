@@ -100,5 +100,25 @@ public class ListItemAPITest extends BaseTest {
         Assert.assertEquals(jsonPath.get("Description"), "Please select the payment methods you will accept.");
     }
 
+    /*
+    Duration field
+     - Boundary value analysis : -1,0,1,3,6,8,9,11
+     - Equivalance partitioning : 1,5,8,11
+     */
+    @Test(description = "Verify when duration is set to a value which is greater than maximum allowed duration returns error")
+    public void testVerifyWhenDurationIsGreaterThanMaximumAllowedReturnsError() throws IOException {
+        ListingRequest listItem = listingRequest();
+        listItem.setDuration(11);
+        Response response = given().log().all().spec(specification).contentType(ContentType.JSON).body(listItem)
+                .when().post(URIs.END_POINT_LIST_ITEM);
+        Assert.assertEquals(response.statusCode(), 200);
+        JsonPath jsonPath = new JsonPath(response.getBody().asString());
+        Assert.assertEquals(jsonPath.get("Success"), false);
+        String description = jsonPath.get("Description").toString();
+        Assert.assertEquals(description.split("\r\n")[0], "The selected duration is not allowed in this category");
+        Assert.assertEquals(description.split("\r\n")[1], "The selected duration is greater than the maximum allowed");
+    }
+
+
 
 }

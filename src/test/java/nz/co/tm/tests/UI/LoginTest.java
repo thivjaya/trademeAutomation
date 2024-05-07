@@ -70,8 +70,16 @@ public class LoginTest extends BaseTest {
 
     }
 
-    @Test
+    @Test(description = "Verify forgotten password allows to reset password")
     public void testVerifyForgotPasswordProcess() {
+
+    }
+    @Test(description = "Verify clicking on Register Now link navigates to the User Register page")
+    public void testVerifyClickingOnRegisterNowNavigatesToTheCorrectPage(){
+
+    }
+    @Test()
+    public void testVerifyRememberMeFunctionality() {
 
     }
 }
