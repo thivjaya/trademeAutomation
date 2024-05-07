@@ -10,7 +10,7 @@ Util package facilitates helper methods to implement automation<br>
 ## Introduction
 This project includes UI tests to validate Customer login scenarios, Basic search functionality, Process of Listing Item.
 In addition to that this project includes API tests to verify the API functionality of Retrieve Latest Listing,
-and listing an item.
+and listing an item. Prioritized positive and negative scenarios are added into the script.
 
 ## Authentication
 For API automation tests consumer key, access token, and OAuth signature are used to authenticate APIs.
