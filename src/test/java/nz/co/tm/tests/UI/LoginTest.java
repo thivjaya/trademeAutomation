@@ -3,7 +3,6 @@ package nz.co.tm.tests.UI;
 import nz.co.tm.UI.pages.HomePage;
 import nz.co.tm.UI.pages.LoginPage;
 import nz.co.tm.UI.utils.ExcelReadUtil;
-import nz.co.tm.utils.UI.BaseTest;
 import org.testng.annotations.Test;
 
 import java.io.IOException;

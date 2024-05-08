@@ -3,7 +3,6 @@ package nz.co.tm.tests.UI;
 import nz.co.tm.UI.pages.HomePage;
 import nz.co.tm.UI.pages.SearchPage;
 import nz.co.tm.UI.utils.DataProviderUtil;
-import nz.co.tm.utils.UI.BaseTest;
 import org.testng.annotations.Test;
 
 /**
@@ -23,4 +22,15 @@ public class SearchTest extends BaseTest {
         softAssert.assertTrue(SearchPage.isSearchedItemDisplayed(itemName), "Expected item name is not listed under given category\n");
         softAssert.assertAll();
     }
+    @Test(description = "Verification when item is not exist under the searched category page shows valid message ")
+    public void verifySearchFunctionalityGivesMessageWhenNoItemExists(){
+        HomePage.navigateToTheCategoriesWindow();
+        HomePage.waitUntilCategoriesLoaded();
+        HomePage.selectBrowseCategory("Computers");
+        SearchPage.waitUntilCategoryPageIsLoaded("Computers");
+        SearchPage.sendSearchItemWithinCategory("testtesttest");
+        softAssert.assertTrue(SearchPage.isNoResultsFoundGiven(), "No message given\n");
+        softAssert.assertAll();
+    }
+
 }

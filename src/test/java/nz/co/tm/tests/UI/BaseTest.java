@@ -1,4 +1,4 @@
-package nz.co.tm.utils.UI;
+package nz.co.tm.tests.UI;
 
 import nz.co.tm.UI.utils.BasePage;
 import org.testng.annotations.AfterTest;

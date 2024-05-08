@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9730bf0-5dc9-4e83-a3f1-1548114ba5d5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nz/co/tm/API/URIs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nz/co/tm/API/URIs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nz/co/tm/UI/pages/SearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nz/co/tm/UI/pages/SearchPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/nz/co/tm/tests/API/RetrieveLatestListingAPITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nz/co/tm/tests/API/RetrieveLatestListingAPITest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/nz/co/tm/tests/UI/ListItemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nz/co/tm/tests/UI/ListItemTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/nz/co/tm/utils/TestData/ItemData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nz/co/tm/utils/UI/TestData/ItemData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/nz/co/tm/tests/UI/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nz/co/tm/tests/UI/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/nz/co/tm/tests/UI/SearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nz/co/tm/tests/UI/SearchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/nz/co/tm/utils/UI/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nz/co/tm/tests/UI/BaseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,17 +43,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/Automation/testsena/trademe",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "configurable.group.appearance"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Automation/testsena/trademe&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Automation\testsena\trademe" />
@@ -57,7 +63,7 @@
       <recent name="D:\Automation\testsena\trademe" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.ListItemTest">
+  <component name="RunManager" selected="TestNG.RetrieveLatestListingAPITest">
     <configuration name="ListItemAPITest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="trademe" />
       <extension name="coverage">
@@ -75,24 +81,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ListItemTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ListItemAPITest.testVerifyWhenAllowedDurationIsGreaterThanMaximumReturnsError" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="trademe" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="nz.co.tm.tests.UI.*" />
+          <option name="PATTERN" value="nz.co.tm.tests.API.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="nz.co.tm.tests.UI" />
-      <option name="MAIN_CLASS_NAME" value="nz.co.tm.tests.UI.ListItemTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PACKAGE_NAME" value="nz.co.tm.tests.API" />
+      <option name="MAIN_CLASS_NAME" value="nz.co.tm.tests.API.ListItemAPITest" />
+      <option name="METHOD_NAME" value="testVerifyWhenAllowedDurationIsGreaterThanMaximumReturnsError" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RetrieveLatestListingAPITest.testRetrieveLatestListingByBuyNowOption" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="RetrieveLatestListingAPITest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="trademe" />
       <extension name="coverage">
         <pattern>
@@ -102,8 +109,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="nz.co.tm.tests.API" />
       <option name="MAIN_CLASS_NAME" value="nz.co.tm.tests.API.RetrieveLatestListingAPITest" />
-      <option name="METHOD_NAME" value="testRetrieveLatestListingByBuyNowOption" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -127,7 +133,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchTest.verifySearchFunctionality" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchTest.verifySearchFunctionalityGivesMessageWhenNoItemExists" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="trademe" />
       <extension name="coverage">
         <pattern>
@@ -137,7 +143,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="nz.co.tm.tests.UI" />
       <option name="MAIN_CLASS_NAME" value="nz.co.tm.tests.UI.SearchTest" />
-      <option name="METHOD_NAME" value="verifySearchFunctionality" />
+      <option name="METHOD_NAME" value="verifySearchFunctionalityGivesMessageWhenNoItemExists" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -147,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.ListItemTest" />
+        <item itemvalue="TestNG.RetrieveLatestListingAPITest" />
         <item itemvalue="TestNG.ListItemAPITest" />
-        <item itemvalue="TestNG.RetrieveLatestListingAPITest.testRetrieveLatestListingByBuyNowOption" />
-        <item itemvalue="TestNG.SearchTest.verifySearchFunctionality" />
         <item itemvalue="TestNG.SearchTest" />
+        <item itemvalue="TestNG.SearchTest.verifySearchFunctionalityGivesMessageWhenNoItemExists" />
+        <item itemvalue="TestNG.ListItemAPITest.testVerifyWhenAllowedDurationIsGreaterThanMaximumReturnsError" />
       </list>
     </recent_temporary>
   </component>
@@ -171,27 +177,27 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/nz/co/tm/UI/utils/BasePage.java</url>
-          <line>28</line>
+          <line>27</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/nz/co/tm/tests/UI/SearchTest.java</url>
-          <line>22</line>
+          <line>21</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/nz/co/tm/tests/UI/ListItemTest.java</url>
-          <line>28</line>
+          <line>27</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/nz/co/tm/tests/API/ListItemAPITest.java</url>
-          <line>34</line>
+          <line>40</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/nz/co/tm/tests/API/ListItemAPITest.java</url>
-          <line>30</line>
+          <line>36</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -201,32 +207,32 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/nz/co/tm/tests/UI/ListItemTest.java</url>
-          <line>34</line>
+          <line>33</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/nz/co/tm/tests/UI/LoginTest.java</url>
-          <line>26</line>
+          <line>25</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/nz/co/tm/tests/UI/LoginTest.java</url>
-          <line>35</line>
+          <line>34</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/nz/co/tm/tests/UI/LoginTest.java</url>
-          <line>44</line>
+          <line>43</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/nz/co/tm/tests/UI/LoginTest.java</url>
-          <line>53</line>
+          <line>52</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/nz/co/tm/tests/UI/ListItemTest.java</url>
-          <line>36</line>
+          <line>35</line>
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -236,12 +242,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/nz/co/tm/tests/UI/ListItemTest.java</url>
-          <line>38</line>
+          <line>37</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/nz/co/tm/tests/UI/ListItemTest.java</url>
-          <line>40</line>
+          <line>39</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -251,33 +257,38 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/nz/co/tm/tests/UI/ListItemTest.java</url>
-          <line>48</line>
+          <line>47</line>
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/nz/co/tm/tests/UI/ListItemTest.java</url>
-          <line>50</line>
+          <line>49</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/nz/co/tm/tests/UI/ListItemTest.java</url>
-          <line>51</line>
+          <line>50</line>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/nz/co/tm/tests/UI/ListItemTest.java</url>
-          <line>52</line>
+          <line>51</line>
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/nz/co/tm/tests/UI/ListItemTest.java</url>
-          <line>54</line>
+          <line>53</line>
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/nz/co/tm/tests/UI/ListItemTest.java</url>
-          <line>55</line>
+          <line>54</line>
           <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/nz/co/tm/tests/UI/SearchTest.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="36" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

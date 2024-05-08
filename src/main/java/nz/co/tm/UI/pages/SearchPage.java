@@ -19,6 +19,7 @@ public class SearchPage extends BasePage {
     private static String txtSearchResult ="//*[contains(text(), \"results for '1'\")]";
     private static By txtSearchBox = By.id("searchString");
     private static By hdrSearchResult = By.xpath("//h1[contains(text(),'Search results')]");
+    private static By imgNoResultsFound = By.xpath("//h2[text()='No results found']/preceding-sibling::tg-svg");
 
     public static void waitUntilCategoryPageIsLoaded(String category){
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
@@ -46,5 +47,8 @@ public class SearchPage extends BasePage {
     }
     public static boolean isSearchedResultsDisplayed(){
         return driver.findElement(hdrSearchResult).isDisplayed();
+    }
+    public static boolean isNoResultsFoundGiven(){
+        return driver.findElement(imgNoResultsFound).isDisplayed();
     }
 }
